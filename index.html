@@ -379,7 +379,7 @@
         function showHistory() {
             const history = JSON.parse(localStorage.getItem("weatherHistory")||"[]");
             historyBox.innerHTML=history.length
-            ? history.map(city=>`<button oneclick="search('${city}')">${city}</button>`).join("")
+            ? history.map(city=>`<button onclick="search('${city}')">${city}</button>`).join("")
             :"<p>No History yet.</p>";
            
         }
